@@ -1,4 +1,4 @@
-format = """$kubernetes$directory$line_break$git_branch$git_status$character"""
+format = """$kubernetes$aws$directory$line_break$git_branch$git_status$character"""
 right_format = """$all"""
 
 "$schema" = 'https://starship.rs/config-schema.json'
@@ -12,7 +12,7 @@ disabled = false
 
 [aws]
 disabled = false
-format = '\[[$symbol($profile )(\($region\))(\[$duration\])]($style)\]'
+format = '\[[$symbol($profile )(\($region\))(\[$duration\])]($style)\] '
 style = 'bold green'
 symbol = '  '
 [aws.region_aliases]
