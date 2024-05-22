@@ -1,0 +1,51 @@
+format = """$kubernetes$directory$line_break$git_branch$git_status$character"""
+right_format = """$all"""
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+[directory]
+disabled = false
+
+[aws]
+disabled = false
+format = '\[[$symbol($profile )(\($region\))(\[$duration\])]($style)\]'
+style = 'bold green'
+symbol = '  '
+[aws.region_aliases]
+us-east-1 = 'va'
+eu-west-2 = 'london'
+eu-west-1 = 'ireland'
+
+[kubernetes]
+disabled = false
+symbol = '󱃾 '
+style = 'bold blue'
+format = '\[[$symbol$context( \($namespace\))]($style)\] '
+
+[git_branch]
+disabled = false
+format = '\[[$symbol$branch]($style)\] '
+
+[git_state]
+disabled = true
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+[git_status]
+disabled = false
+
+[golang]
+disabled = true
+symbol = ' '
+format = '\[[$symbol($version)]($style)\]'
+
+[ruby]
+disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[nix_shell]
+disabled = true
+format = '\[[$symbol$state( \($name\))]($style)\]'
