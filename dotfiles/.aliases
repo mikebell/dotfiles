@@ -6,6 +6,6 @@ alias tf="terraform"
 alias ll="ls -lash"
 
 # Git
-alias gcz="git-cz"
+alias gcz="git-cz --disable-emoji"
 alias gst="git status"
 alias gd="git diff"
