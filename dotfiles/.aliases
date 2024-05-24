@@ -1,0 +1,10 @@
+# Short codes
+alias k="kubectl"
+alias tf="terraform"
+
+# Nice to haves
+alias ll="ls -lash"
+
+# Git
+alias gcz="git-cz"
+alias gst="git status"
