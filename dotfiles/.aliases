@@ -8,3 +8,4 @@ alias ll="ls -lash"
 # Git
 alias gcz="git-cz"
 alias gst="git status"
+alias gd="git diff"
