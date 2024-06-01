@@ -1,4 +1,4 @@
-format = """$kubernetes$aws$directory$line_break$git_branch$git_status$time$character"""
+format = """$kubernetes$aws$line_break$time$git_branch$git_status$directory$character"""
 right_format = """$all"""
 
 "$schema" = 'https://starship.rs/config-schema.json'
@@ -64,3 +64,6 @@ disabled = false
 format = '[\[ $time \]]($style) '
 time_format = '%T'
 utc_time_offset = 'local'
+
+[gcloud]
+disabled = true
