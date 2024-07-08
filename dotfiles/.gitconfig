@@ -1,9 +1,3 @@
-[init]
-	templateDir = /Users/mike.bell/.git-templates/git-secrets
-[user]
-	email = mike.bell1@digital.justice.gov.uk
-	name = Mike Bell
-
 [core]
     pager = delta
 
